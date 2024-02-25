@@ -26,9 +26,14 @@
 }
 .border:hover{
     border: 1px solid white;
+    transition: border 0.3s ease-in-out;
 
 }
-
+.nav-signin a{
+    text-decoration: none;
+    color: white;
+}
+]
 .add1{
     color: #cccccc;
     font-size: 0.85rem;
@@ -240,4 +245,37 @@ ul a{
 .panel-ops a{
     color: white;
     text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .nav-logo,
+    .nav-address,
+    .nav-search,
+    .nav-signin,
+    .nav-return,
+    .nav-cart {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search-input {
+        width: 80%;
+    }
+    .shop-sec {
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .foot2 ul,
+    .foot3,
+    .foot4 {
+        width: 100%;
+        text-align: center;
+    }
 }
